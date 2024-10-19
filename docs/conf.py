@@ -23,11 +23,11 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
-    "autodocsumm",
+    # "autodocsumm",
     "sphinx.ext.coverage",
 ]
 
-autodoc_default_options = {"autosummary": True}
+# autodoc_default_options = {"autosummary": True}
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
