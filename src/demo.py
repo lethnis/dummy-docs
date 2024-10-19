@@ -44,3 +44,16 @@ def make_dummies(self, amount: int, materials: str | list[str] | None = None) ->
 
 def clean_the_floor():
     pass
+
+
+def make_metal_dummy(dummy: Dummy) -> Dummy:
+    """Change dummy material to metal.
+
+    Args:
+        dummy (Dummy): dummy instance.
+
+    Returns:
+        Dummy: same dummy but metal one.
+    """
+    dummy.material = "metal"
+    return dummy
