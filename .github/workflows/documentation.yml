@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
       - name: Install dependencies
-        run: pip install sphinx autodocsumm
+        run: pip install sphinx autodocsumm sphinx-book-theme
       - name: Sphinx build
         run: sphinx-build docs docs/_build
       - name: Deploy to GitHub Pages
