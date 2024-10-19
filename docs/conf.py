@@ -20,14 +20,16 @@ release = "1.0.0"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    "autodocsumm",
+    "sphinx_copybutton",
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
-    # "autodocsumm",
     "sphinx.ext.coverage",
 ]
 
-# autodoc_default_options = {"autosummary": True}
+autodoc_default_options = {"autosummary": True}
+copybutton_prompt_text = ">>> "
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]

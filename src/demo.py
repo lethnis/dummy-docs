@@ -1,13 +1,16 @@
 class Dummy:
-    """Dummy for training. You can beat it, or shoot it with arrows."""
+    """Dummy for training. You can beat it, or shoot it with arrows. For now it has no health.
+
+    Args:
+        height (int, optional): height of the dummy. Defaults to 180.
+        material (str, optional): what is it made of. Wood, metal, etc. Defaults to "straw".
+
+    Example:
+        >>> dummy = Dummy()
+        >>> dummy.do_nothing()
+    """
 
     def __init__(self, height=180, material="straw"):
-        """Creation of the dummy. For now it has no health.
-
-        Args:
-            height (int, optional): height of the dummy. Defaults to 180.
-            material (str, optional): what is it made of. Wood, metal, etc. Defaults to "straw".
-        """
         self.height = height
         self.material = material
 
