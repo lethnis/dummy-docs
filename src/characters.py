@@ -1,4 +1,11 @@
 class Man:
+    """Basic character for every one else.
+
+    Args:
+        health (int, optional): Amount of health. Defaults to 100.
+        armor (int, optional): Armour strength. Defaults to 0.
+        inventory (list | None, optional): What does man has. Defaults to None.
+    """
 
     def __init__(
         self,
@@ -6,13 +13,6 @@ class Man:
         armor: int = 0,
         inventory: list | None = None,
     ) -> None:
-        """Basic character for every one else.
-
-        Args:
-            health (int, optional): Amount of health. Defaults to 100.
-            armor (int, optional): Armour strength. Defaults to 0.
-            inventory (list | None, optional): What does man has. Defaults to None.
-        """
 
         self.health = health
         self.armor = armor
